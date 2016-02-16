@@ -13,3 +13,8 @@ img{
 .img-div{
     display: inline-block;vertical-align: top;
 }
+
+input{
+    border: .1em solid black;
+    margin-bottom: 1em;
+}

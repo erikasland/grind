@@ -1,4 +1,4 @@
-grindModule.controller('activitiesController', function($location, activitiesFactory){
+grindModule.controller('activitiesController', function($location, scheduleFactory){
     var _this = this;
     this.error;
     this.nextPage = function(){
@@ -6,7 +6,7 @@ grindModule.controller('activitiesController', function($location, activitiesFac
     }
 
     this.submitSchedule = function(userChoice){
-        var schedule = activitiesFactory.schedule
+        var schedule = scheduleFactory.schedule
         for(var index = 0; index < schedule.length; index++){
             if(schedule[index].id === userChoice.id){
                 for(var runner = index; runner < schedule.length-1; runner++){
@@ -21,7 +21,7 @@ grindModule.controller('activitiesController', function($location, activitiesFac
             }
         }
         if(schedule.length < 8){
-            activitiesFactory.schedule.push(userChoice);
+            scheduleFactory.schedule.push(userChoice);
         }else{
             _this.error = 'It seems like you are attempting to choose more than 8 choices. Stick with 8 please.'
         }
