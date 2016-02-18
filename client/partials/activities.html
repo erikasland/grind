@@ -1,2 +1,45 @@
 <h1>activites</h1>
+<h4 ng-if='activitiesControl.error' ng-bind='activitiesControl.error'></h4>
+<div class='img-div'>
+    <h3>Squats</h3>
+    <img src='./static/images/squats.jpg' ng-click='activitiesControl.submitSchedule({id: 1, title: "Squats", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Push-Ups</h3>
+    <img src='./static/images/pushup.jpg' ng-click='activitiesControl.submitSchedule({id: 2, title: "Push-Ups", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Burpees</h3>
+    <img src='./static/images/burp.jpg' ng-click='activitiesControl.submitSchedule({id: 3, title: "Burpees", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Sit-Ups</h3>
+    <img src='./static/images/situp.jpg' ng-click='activitiesControl.submitSchedule({id: 4, title: "Sit-Ups", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Go For A Walk</h3>
+    <img src='./static/images/walk.jpg' ng-click='activitiesControl.submitSchedule({id: 5, title: "Go For A Walk", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Go For A Run</h3>
+    <img src='./static/images/run.jpg' ng-click='activitiesControl.submitSchedule({id: 6, title: "Go For A Run", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Series Of Stretches</h3>
+    <img src='./static/images/stretch.gif' ng-click='activitiesControl.submitSchedule({id: 7, title: "Series Of Stretches", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Move Your Joints</h3>
+    <img src='./static/images/knee.jpg' ng-click='activitiesControl.submitSchedule({id: 8, title: "Move Your Joints", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Meditate</h3>
+    <img src='./static/images/med.jpg' ng-click='activitiesControl.submitSchedule({id: 9, title: "Meditate", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div>
+<div class='img-div'>
+    <h3>Drink Some Water and Get Outside</h3>
+    <img src='./static/images/water.jpg' ng-click='activitiesControl.submitSchedule({id: 10, title: "Drink Some Water and Get Outside", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
+</div><br><br><br>
+
+
 <button ng-click='activitiesControl.nextPage()'>Next</button>
