@@ -1,4 +1,5 @@
 var grindModule = angular.module('grindApp', ['ngRoute'])
+
 grindModule.config(function($routeProvider){
     $routeProvider
         .when('/', {
@@ -22,3 +23,14 @@ grindModule.config(function($routeProvider){
             controllerAs: 'timerControl'
         })
 })
+
+grindModule.directive("dynamic", function($compile){
+    return{
+        link: function(scope, element){
+            var template = "<button ng-click='timerControl.resetTimer()'>Keep Working</button>";
+            var linkFn = $compile(template);
+            var content = linkFn(scope);
+            element.append(content);
+        }
+    }
+});

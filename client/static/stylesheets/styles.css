@@ -18,3 +18,22 @@ input{
     border: .1em solid black;
     margin-bottom: 1em;
 }
+
+#break-div{
+    background-color: black;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#timer{
+    width: 20em;
+    height: 10em;
+}
+
+#event_title{
+    z-index: 1;
+    color: white;
+    font-size: 3em;
+}

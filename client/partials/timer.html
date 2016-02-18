@@ -1,2 +1,12 @@
-<h1>TIMER</h1>
-<h1>time = <span id='time'></span></h1>
+<div id='notification'></div>
+<div id='wrapper'>
+<div></div>
+    <div id='test' ng-hide='timerControl.closeVideo'></div> 
+    <div id='timer'>
+        <span id='time'>0:00:00</span>
+    </div>
+    <button ng-hide='timerControl.timerRunning' ng-show='timerControl.resetWorkFlow' ng-click='timerControl.startWorkFlow()'>Start</button>
+    <button id='1'ng-click='timerControl.pauseResumeTimer()'><span ng-hide='timerControl.timerPaused' ng-show='!timerControl.timerPaused'>Pause</span><span ng-hide='!timerControl.timerPaused' ng-show='timerControl.timerPaused'>Resume</span></button>
+    <button ng-click='timerControl.resetTimer()'>reset</button>
+    <div></div>
+</div>

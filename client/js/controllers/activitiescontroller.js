@@ -17,7 +17,6 @@ grindModule.controller('activitiesController', function($location, scheduleFacto
                     schedule[runner] = schedule[runner + 1];
                 }
                 schedule.pop();
-                console.log(schedule)
             }
         }
         if(schedule.length < 8){

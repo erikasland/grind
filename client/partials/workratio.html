@@ -1,6 +1,7 @@
 <h1>Work Ratio</h1>
+<focusin></focusin>
 <h4 ng-if='ratioControl.error' ng-bind='ratioControl.error'></h4>
-<input type='text' ng-model='ratioControl.workday'><br>
-<input type='text' ng-model='ratioControl.breakspan'><br>
-<input type='text' ng-model='ratioControl.breaklength'><br>
+Work Day Length (in hours please)<input type='text' ng-model='ratioControl.workday'><br>
+How often you would like to take breaks (in hours please)<input type='text' ng-model='ratioControl.breakspan'><br>
+How long would you like to take breaks? (Minutes please)<input type='text' ng-model='ratioControl.breaklength'><br>
 <button ng-click='ratioControl.nextPage()'>Next</button>
