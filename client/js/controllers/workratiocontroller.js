@@ -1,6 +1,7 @@
 grindModule.controller('workRatioController', function($location, scheduleFactory){
     var _this = this;
     this.error;
+    if(scheduleFactory.schedule.length === 0){$location.path('/')}
 
     this.nextPage = function(){
         if(!_this.workday || !_this.breakspan || !_this.breaklength){

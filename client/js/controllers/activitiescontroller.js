@@ -2,6 +2,10 @@ grindModule.controller('activitiesController', function($location, scheduleFacto
     var _this = this;
     this.error;
     this.nextPage = function(){
+        if(scheduleFactory.schedule.length < 4){
+            _this.error = 'you must pick at least 4 events before moving onto the next step'
+            return
+        }
         $location.path('/workratio');
     }
 
