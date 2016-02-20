@@ -1,7 +1,21 @@
-<h1>Work Ratio</h1>
-<focusin></focusin>
-<h4 ng-if='ratioControl.error' ng-bind='ratioControl.error'></h4>
-Work Day Length (in hours please)<input type='text' ng-model='ratioControl.workday'><br>
-How often you would like to take breaks (in hours please)<input type='text' ng-model='ratioControl.breakspan'><br>
-How long would you like to take breaks? (Minutes please)<input type='text' ng-model='ratioControl.breaklength'><br>
-<button ng-click='ratioControl.nextPage()'>Next</button>
+<div id='wr-main-wrap'>
+    <h2 id='wr-title'>Work Ratio</h2>
+    <h4 class='act-wr-sub-title'>Design your workflow.</h4>
+    <div class='error' id='wr-error' ng-if='ratioControl.error'>
+        <h4 class='error_text' ng-bind='ratioControl.error'></h4>
+    </div>
+    <div id='wr-wrapper'>
+        <div id='wr-opaq-background'></div>
+        <div id='label-wrapper'>
+            <h3 class='label-text'>work day length (hours only):</h3>
+            <h3 class='label-text'>break frequency (hours only):</h3>
+            <h3 class='label-text'>break length (minutes only):</h3>
+        </div>
+        <div id='input-wrapper'>
+            <input class='work-input' type='text' ng-model='ratioControl.workday'>
+            <input class='work-input' type='text' ng-model='ratioControl.breakspan'>
+            <input class='work-input' type='text' ng-model='ratioControl.breaklength'>
+        </div><br>
+        <button class='mob_white_btn' ng-click='ratioControl.nextPage()'>Next</button>
+    </div>
+</div>
