@@ -2,6 +2,10 @@ grindModule.controller('activitiesController', function($location, scheduleFacto
     var _this = this;
     this.error;
     this.nextPage = function(){
+        if(scheduleFactory.schedule.length < 4){
+            _this.error = 'Please choose at least 4 activities. We want to keep your day spontaneous!'
+            return
+        }
         $location.path('/workratio');
     }
 
@@ -20,9 +24,10 @@ grindModule.controller('activitiesController', function($location, scheduleFacto
             }
         }
         if(schedule.length < 8){
+            _this.error = '';
             scheduleFactory.schedule.push(userChoice);
         }else{
-            _this.error = 'It seems like you are attempting to choose more than 8 choices. Stick with 8 please.'
+            _this.error = 'You can only select 8 activities. Feel free to switch them around. Just stay under 8.'
         }
     }
 })

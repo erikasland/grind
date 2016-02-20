@@ -1,5 +1,16 @@
 var grindModule = angular.module('grindApp', ['ngRoute'])
-
+grindModule.directive('backImg', function(){
+    return function(scope, element, attrs){
+        var url = ['./../static/images/pushup.jpg', './../static/images/work.jpg']
+        var idx = Math.floor(Math.random() * url.length)
+        console.log(scope)
+        console.log(idx)
+        element.css({
+            'background': 'url(' + url[idx] +') no-repeat center center fixed',
+            'background-size' : 'cover'
+        });
+    };
+});
 grindModule.config(function($routeProvider){
     $routeProvider
         .when('/', {
@@ -23,14 +34,3 @@ grindModule.config(function($routeProvider){
             controllerAs: 'timerControl'
         })
 })
-
-grindModule.directive("dynamic", function($compile){
-    return{
-        link: function(scope, element){
-            var template = "<button ng-click='timerControl.resetTimer()'>Keep Working</button>";
-            var linkFn = $compile(template);
-            var content = linkFn(scope);
-            element.append(content);
-        }
-    }
-});
