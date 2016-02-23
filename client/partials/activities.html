@@ -1,61 +1,63 @@
-<h2 id='act-head-title'>activities</h2>
-<h4 class='act-wr-sub-title'>What do you want to do on your breaks?</h4>
-<div class='error' ng-if='activitiesControl.error'>
-    <h4 class='error_text' ng-bind='activitiesControl.error'></h4>
-</div>
-<div class='section-wrapper'>
-    <div id='img-wrapper'>
-        <div class='opaq-background'></div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Squats</h3>
-            <img class='act-img' src='./static/images/squats.jpg' ng-click='activitiesControl.submitSchedule({id: 1, title: "Squats", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Push-Ups</h3>
-            <img class='act-img' src='./static/images/pushup.jpg' ng-click='activitiesControl.submitSchedule({id: 2, title: "Push-Ups", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Burpees</h3>
-            <img class='act-img' src='./static/images/burp.jpg' ng-click='activitiesControl.submitSchedule({id: 3, title: "Burpees", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Sit-Ups</h3>
-            <img class='act-img' src='./static/images/situp.jpg' ng-click='activitiesControl.submitSchedule({id: 4, title: "Sit-Ups", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Go For A Walk</h3>
-            <img class='act-img' src='./static/images/walk.jpg' ng-click='activitiesControl.submitSchedule({id: 5, title: "Go For A Walk", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Go For A Run</h3>
-            <img class='act-img' src='./static/images/run.jpg' ng-click='activitiesControl.submitSchedule({id: 6, title: "Go For A Run", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Stretches</h3>
-            <img class='act-img' src='./static/images/stretch.gif' ng-click='activitiesControl.submitSchedule({id: 7, title: "Series Of Stretches", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Move Your Joints</h3>
-            <img class='act-img' src='./static/images/knee.jpg' ng-click='activitiesControl.submitSchedule({id: 8, title: "Move Your Joints", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <!-- <div class='opaq-background'></div> -->
-            <h3 class='act-title'>Meditate</h3>
-            <img class='act-img' src='./static/images/med.jpg' ng-click='activitiesControl.submitSchedule({id: 9, title: "Meditate", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div>
-        <div class='img-div'>
-            <h3 class='act-title'>Drink Water</h3>
-            <img class='act-img' src='./static/images/water.jpg' ng-click='activitiesControl.submitSchedule({id: 10, title: "Drink Some Water and Get Outside", video: "https://www.youtube.com/watch?v=aPYCiuiB4PA"})'>
-        </div><br><br><br>
-        <button class='mob_white_btn' id='mob_next_btn' ng-click='activitiesControl.nextPage()'>NEXT</button>
+<script type="text/javascript">
+    // $(document).ready(function(){
+    //     $('img').click(function(){
+    //         console.log(123)
+    //         $(this).toggleClass('selected')
+    //     })
+    // })
+</script>
+<div id='act-wrapper'>
+    <h2 id='act-head-title'>activities</h2>
+    <h4 class='act-wr-sub-title'>What do you want to do on your breaks?</h4>
+    <div class='error' id='act-error' ng-if='activitiesControl.error'>
+        <h4 class='error_text' ng-bind='activitiesControl.error'></h4>
     </div>
 
+    <div class='section-wrapper'>
+        <div id='img-wrapper'>
+            <div class='opaq-background'></div>
+            <div class='img-div'>
+                <h3 class='act-title'>Squats</h3>
+                <img class='act-img' id='1' src='./static/images/squats.jpg' ng-click='activitiesControl.submitSchedule({id: 1, title: "Squats", video: "http://videocdn.bodybuilding.com/video/mp4/90000/90572m.mp4"}, 1)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Push-Ups</h3>
+                <img class='act-img' id='2' src='./static/images/pushup.jpg' ng-click='activitiesControl.submitSchedule({id: 2, title: "Push-Ups", video: "http://videocdn.bodybuilding.com/video/mp4/90000/90522m.mp4"}, 2)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Burpees</h3>
+                <img class='act-img' id='3' src='./static/images/burp.jpg' ng-click='activitiesControl.submitSchedule({id: 3, title: "Burpees", video: "http://videocdn.bodybuilding.com/video/mp4/118000/118171m.mp4"}, 3)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Sit-Ups</h3>
+                <img class='act-img' id='4' src='./static/images/situp.jpg' ng-click='activitiesControl.submitSchedule({id: 4, title: "Sit-Ups", video: "http://videocdn.bodybuilding.com/video/mp4/54000/54441m.mp4"}, 4)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Take A Walk</h3>
+                <img class='act-img' id='5' src='./static/images/walk.jpg' ng-click='activitiesControl.submitSchedule({id: 5, title: "Take A Walk", video: "http://videocdn.bodybuilding.com/video/mp4/72000/72402m.mp4"}, 5)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Go Running</h3>
+                <img class='act-img' id='6' src='./static/images/run.jpg' ng-click='activitiesControl.submitSchedule({id: 6, title: "Go For A Run", video: "http://videocdn.bodybuilding.com/video/mp4/72000/72402m.mp4"}, 6)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Jump Squats</h3>
+                <img class='act-img' id='7' src='./static/images/jumpsquat.jpg' ng-click='activitiesControl.submitSchedule({id: 7, title: "Jump Squats", video: "http://videocdn.bodybuilding.com/video/mp4/118000/118291m.mp4"}, 7)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Lunges</h3>
+                <img class='act-img' id='8' src='./static/images/lunge.jpg' ng-click='activitiesControl.submitSchedule({id: 8, title: "Lunges", video: "http://videocdn.bodybuilding.com/video/mp4/106000/106952m.mp4"}, 8)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Plank</h3>
+                <img class='act-img' id='9' src='./static/images/plank.jpg' ng-click='activitiesControl.submitSchedule({id: 9, title: "Plank", video: "http://videocdn.bodybuilding.com/video/mp4/90000/91032m.mp4"}, 9)'>
+            </div>
+            <div class='img-div'>
+                <h3 class='act-title'>Air Bike</h3>
+                <img class='act-img' id='10' src='./static/images/bikecrunch.jpg' ng-click='activitiesControl.submitSchedule({id: 10, title: "Air Bike", video: "http://videocdn.bodybuilding.com/video/mp4/38000/38051m.mp4"}, 10)'>
+            </div><br><br><br>
+            <button class='white_btn' id='next_btn' ng-click='activitiesControl.nextPage()'>NEXT</button>
+        </div>
+    </div>
 </div>
+

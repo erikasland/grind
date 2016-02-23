@@ -1,3 +1,8 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
 @font-face{
     font-family: 'Bebas Neue';
     src: url('./BebasNeue/TTF/BebasNeueBold.ttf');
@@ -8,17 +13,19 @@
     src: url('./BebasNeue/TTF/BebasNeueLight.ttf');
 }
 
-@media screen and (max-width: 480px) {
-    body{
-        background-color: green;
+@media screen and (min-width: 0px) {
+    #landing-wrapper{
+        width: 18em;
+        margin: 0 auto;
     }
 
     h1{
         height: .9em;
         margin-top: .2em;
-        font-size: 10em;
+        font-size: 9em;
         color: black;
         text-align: center;
+        font-family: "Bebas Neue"
     }
 
     #sub-wrapper{
@@ -27,46 +34,62 @@
     }
 
     .sub-title{
-        font-size: 1.7em;
+        font-size: 1.18em;
         font-family: 'Bebas Neue Light';
         word-spacing: .1em;
         text-align: center;
     }
 
     #button-wrapper{
-        width: 90%;
-        margin: 46% auto 0 auto;
+        width: 18em;
+        position: fixed;
+        bottom: 4em;
     }
 
-    .mob_white_btn{
+    .white_btn{
         width: 100%;
         height: 3.5em;
-        background-color: white;
-        color: black;
+        background-color: transparent;
+        color: white;
         font-family: sans-serif; 
         font-size: .8em;
-        font-weight: bold
+        font-weight: bold;
+        border: .2em white solid;
     }
 
+    .white_btn:hover{
+        transition: 0.5s linear all;
+        background-color: white;
+        color: black; 
+    }
+
+    .selected{
+        opacity: .1 !important;
+    }
+
+    #act-wrapper{
+        width: 17.4em;
+        margin: 0 auto;
+    }
 
     #act-head-title{
         margin-top: .2em;
         height: .9em;
         text-align: center;
-        font-size: 5.3em;
+        font-size: 4.8em;
         font-family: "Bebas Neue";
     }
 
     .act-wr-sub-title{
         margin-bottom: 1em;
         text-align: center;
-        font-size: 1.25em;
+        font-size: 1.1em;
         font-family: 'Bebas Neue Light'
 
     }
 
     .error{
-        margin: 0 0 .5em 7%;
+        margin: 0 0 .5em 0%;
         width: 15.25em;
         height: 2em;
         background-color: #F27F7F;
@@ -89,7 +112,7 @@
     }
 
     .section-wrapper{
-        width: 87%;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
     }
@@ -98,7 +121,7 @@
         margin-top: -.8em;
         position: absolute;
         width: 17.25em;
-        height: 49.3em;
+        height: 50.5em;
         background-color: white;
         opacity: .7;
         z-index: -1;
@@ -114,6 +137,7 @@
 
     .img-div{
         margin-bottom: .5em;
+        display: inline-block;vertical-align: top;
     }
 
     .act-img{
@@ -123,7 +147,7 @@
         border-radius: .5em;
     }
 
-    #mob_next_btn{
+    #next_btn{
         margin: 0 0 3em 0;
         width: 100%;
     }
@@ -137,40 +161,13 @@
         margin-top: .2em;
         height: .9em;
         font-family: 'Bebas Neue';
-        font-size: 5em;
+        font-size: 4.6em;
         text-align: center;
     }
 
     #wr-wrapper{
         width: 17em;
-        margin: 3em auto;
-    }
-
-    .work-input{
-        width: 3em;
-    }
-
-    #label-wrapper{
-        display: inline-block;vertical-align: top;
-        width:13em;
-        padding: .5em 0 0 .5em;
-    }
-
-    #input-wrapper{
-        display: inline-block;vertical-align: top;
-        width: 2.6em;
-        margin-bottom: 43%;
-        padding: .5em .5em 0 0;
-    }
-
-    input{
-        display: block;
-    }
-
-    .label-text{
-        font-family: 'Bebas Neue';
-        font-weight: lighter;
-        margin-bottom: .8em;
+        margin: 3.5em auto;
     }
 
     #wr-error{
@@ -183,23 +180,56 @@
     #wr-opaq-background{
         position: absolute;
         width: 17em;
-        height: 6.3em;
+        height: 7em;
         background-color: white;
         z-index: -1;
         opacity: .7;
         border-radius: .25em;
     }
 
+    #label-wrapper{
+        display: inline-block;vertical-align: top;
+        width: 10.6em;
+        padding: .5em 0 0 .5em;
+    }
+
+    .label-text{
+        font-family: 'Bebas Neue';
+        margin-bottom: .8em;
+        word-spacing: .1em;
+    }
+
+    #input-wrapper{
+        display: inline-block;vertical-align: top;
+        width: 5em;
+        padding: .5em .5em 0 0;
+    }
+
+    select{
+        width: 6em;
+        margin: 0 0 1.1em 0;
+        background-color: white;
+        border: black solid .1em;
+    }
+
+    #wr-next{
+        position: fixed;
+        bottom: 20%;
+        width: 21.25em;
+    }
+
+    /* TIMER CSS vvvvv*/
+
     #timer-wrap{
         width: 18em;
         height: 20em;
         margin: 0 auto;
-        padding-top: 5em;
+        padding-top: 45%;
         z-index: -1;
     }
 
     #timer{
-        width: 100%;
+        width: 17.7em;
         height: 8em;
         background-color: white;
         opacity: .7;
@@ -215,79 +245,366 @@
         z-index: -1;
 
     }
-}
 
-@media screen and (min-width: 481px) {
-    h1{
-        font-size: 9em;
-        text-align: center;
+    #break_div{
+        margin: 2em auto 0 auto;
+        width: 19.3em;
+        height: 100%;
+        z-index: 1;
     }
-    
-    #button-wrapper{
-        width: 16.1em;
+
+    #event_title{
+        font-family: 'Bebas Neue';
+        text-align: center;
+        z-index: 1;
+        color: white;
+        font-size: 4em;
+    }
+
+    #tri-btn-wrap{
+        width: 100%;
         margin: 0 auto;
     }
 
-    #start_yr_day_btn{
-        width: 22em;
-        height: 4.5em;
-        background-color: transparent;
-        color: white;
-        border: white solid .3em;
-        font-family: sans-serif; 
-        font-size: .8em;
+    .tri-btn-div{
+        display: inline-block;
+        width: 5.5em;
+    }
+
+    .tri-btn{
+        width: 6.5em;
+        height: 2.5em;
+        font-family: sans-serif;
         font-weight: bold;
+        margin-top: 2em;
+        background-color: white;
+    }
+
+    #start-btn:hover{
+        background-color: lightgreen;
+        transition: .5s;
+    }
+
+    #resume-btn:hover{
+        background-color: lightgreen;
+        transition: .5s;
+    }
+
+    #pause-btn:hover{
+        background-color: #ffff99;
+        transition: .5s;
+    }
+
+    #reset-btn:hover{
+        background-color: #ff6666;
+        transition: .5s;
+    }
+
+    #resume-btn-div, #start-btn-div{
+        margin-right: .4em;
+    }
+
+    #end_break_btn{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    #landing-wrapper{
+        width: 31em;
+    }
+
+    h1{
+        font-size: 15.6em;
+    }
+
+    .sub-title{
+        font-size: 2.5em;
+    }
+
+    #button-wrapper{
+        width: 28em;
+    }
+
+    .white_btn{
+        height: 3.5em;
+        font-size: 1.4em;
+    }
+
+    /*Activities*/
+
+    #act-wrapper{
+        width: 31.6em;
+        margin: 0 auto;
+    }
+
+    #act-head-title{
+        font-size: 8.7em;
+    }
+
+    .act-wr-sub-title{
+        font-size: 2.2em;
+    }
+
+    #act-error{
+        margin-left: 1.8em;
+    }
+
+    .error{
+        width: 26em;
+    }
+
+    .error_text{
+        font-size: .98em;
+    }
+
+    #img-wrapper{
+        width: 28em;
+    }
+
+    .opaq-background{
+        width: 28em;
+        height: 83.5em;
+    }
+
+    .act-img{
+        width: 11.8em;
+        height: 11.8em;
+    }
+
+    .act-title{
+        font-size: 2.5em;
+    }
+
+    #wr-main-wrap{
+        width: 29em;
+    }
+
+    #wr-title{
+        font-size: 7.1em;
+    }
+
+    #wr-wrapper{
+        width: 29em;
+        margin: 0 auto 3.5em 0;
+    }
+
+    #wr-opaq-background{
+        width: 29em;
+        height: 11.3em;
+    }
+
+    #label-wrapper{
+        width: 18.7em;
+        margin: .75em 0 0 .75em;
+    }
+
+    #input-wrapper{
+        padding: 1.2em .75em 0 0;
+        width: 7.5em;
+
+    }
+
+    .label-text{
+        font-size: 2em;
+    }
+
+    select{
+        width: 9em;
+        height: 2em;
+        margin: 0 0 2.35em 0;
+    }
+
+    #wr-next{
+        width: 20.7em;
+    }
+
+    #wr-error{
+        position: static;
+        margin: 0 0 0 0;
+        width: 26.9em;
+    }
+
+    #timer-wrap{
+        width: 28em;
+    }
+
+    #timer{
+        width: 27em;
+        height: 12em;
+    }
+
+    #time{
+        padding-top: 1.1em;
+    }
+
+    #tri-btn-wrap{
+        width: 28em;
+    }
+
+    .tri-btn-div{
+        width: 7.5em;
+    }
+
+    .tri-btn{
+        width: 9.5em;
+    }
+
+    #resume-btn-div, #start-btn-div{
+        margin-right: 1.8em;
+    }
+
+    #break_div{
+        width: 30.3em;
+    }
+
+    #event_title{
+        font-size: 6.5em;
     }
 
 }
 
 @media screen and (min-width: 1024px) {
+    #act-wrapper{
+        width: 63em;
+        margin: 0 auto;
+    }
+
     h1{
-        font-size: 12em;
-        text-align: center;
+        font-size: 15.6em;
+    }
+
+    .sub-title{
+        font-size: 3em;
+    }
+
+    #button-wrapper{
+        width: 31em;
+    }
+
+    /*Activities*/
+
+    #act-wrapper{
+        width: 61em;
+    }
+
+    #act-head-title{
+        font-size: 10em;
+    }
+
+    .act-wr-sub-title{
+        font-size: 2.43em;
+    }
+
+    .error{
+        width: 59.5em;
+    }
+
+    #act-error{
+        margin: 0 0 0 0;
+    }
+
+    #img-wrapper{
+        width: 61em;
+    }
+
+    .opaq-background{
+        width: 61.5em;
+        height: 31.5em;
+    }
+
+    .img-div{
+        margin: 0 0 2em .8em;
+    }
+
+    .act-img{
+        width: 10.9em;
+        height: 10.9em;
+        margin: 0 0 0 0;
+    }
+
+    .act-img:hover{
+        opacity: .3;
+
+    }
+
+    #next_btn{
+        width: 22.8em;
+        margin-left: 10.4em;
+    }
+
+    #wr-main-wrap{
+        width: 32em;
+    }
+
+    #wr-title{
+        font-size: 7.9em;
+    }
+
+    #wr-wrapper{
+        width: 32em;
+    }
+
+    #wr-opaq-background{    
+        width: 32em;
+    }
+
+    #label-wrapper{
+        width: 21.7em;
+    }
+
+    #wr-next{
+        width: 22.9em;
+    }
+
+    #wr-error{
+        width: 29.9em;
+    }
+
+    #timer-wrap{
+        width: 41em;
+        padding: 20%
+    }
+
+    #timer{
+        height: 16em;
+        width: 39.5em;
+    }
+
+    #time{
+        padding-top: .5em;
+        font-size: 9em;
+    }
+
+    #tri-btn-wrap{
+        width: 41em;
+    }
+
+    .tri-btn-div{
+        width: 12.25em;
+    }
+
+    .tri-btn{
+        width: 13.1em;
+        height: 3.5em;
+    }
+
+    #break_div{
+        width: 41.3em;
+    }
+
+    #event_title{
+        font-size: 7.5em;
     }
 }
 
-/* Media Queries ^^^ */
+   .opaq{
+        opacity: .1;
+    }
 
-*{
-    border: 0;
-    margin: 0;
-}
-
-
-body{
-    /*background-color: black;*/
-}
-
-p{
-    font-family: serif;
-}
-
-h1{
-    font-family: 'Bebas Neue';
-    color: black;
-}
-
-.img-div{
-    display: inline-block;vertical-align: top;
-}
-
-input{
-    border: .1em solid black;
-    margin-bottom: 1em;
-}
-
-#break-div{
-    background-color: black;
-    /*opacity: .8;*/
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-#event_title{
-    z-index: 1;
-    color: white;
-    font-size: 3em;
-}
+    .r{
+        color: red;
+    }
+    .dip{
+        color: green;
+    }

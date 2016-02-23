@@ -1,9 +1,0 @@
-pushups: http://www.bodybuilding.com/exercises/detail/view/name/pushups
-
-squats: http://www.bodybuilding.com/exercises/detail/view/name/bodyweight-squat
-
-situp: http://www.bodybuilding.com/exercises/detail/view/name/sit-up
-
-lunge: http://www.bodybuilding.com/exercises/detail/view/name/bodyweight-walking-lunge
-
-walking/running: http://www.bodybuilding.com/exercises/detail/view/name/trail-runningwalking
