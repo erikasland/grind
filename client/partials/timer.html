@@ -1,11 +1,22 @@
-<div id='notification'></div>
-<div id='test' ng-hide='timerControl.closeVideo'></div>
-<div id='timer-wrap'>
-    <div id='timer'>
-        <h3 id='time'>0:00:00</h3>
+<div id='timer-wrapper'>
+    <div id='notification'></div>
+    <div id='black-background'></div>
+    <div id='vid_div' ng-hide='timerControl.closeVideo'></div>
+    <div id='timer-wrap'>
+        <div id='timer'>
+            <h3 id='time'>0:00:00</h3>
+        </div>
+        <div id='tri-btn-wrap'>
+            <div class='tri-btn-div' id='start-btn-div'>
+                <button class='tri-btn' id='start-btn' ng-hide='timerControl.timerRunning' ng-show='timerControl.resetWorkFlow' ng-click='timerControl.startWorkFlow()'>START</button>
+            </div>
+            <div class='tri-btn-div' id='resume-btn-div'>
+                <button class='tri-btn' id='pause-btn' ng-click='timerControl.pauseResumeTimer()' ng-hide='timerControl.timerPaused' ng-show='!timerControl.timerPaused'>PAUSE</button>
+                <button class='tri-btn' id='resume-btn' ng-click='timerControl.pauseResumeTimer()' ng-hide='!timerControl.timerPaused' ng-show='timerControl.timerPaused'>RESUME</button>
+            </div>
+            <div class='tri-btn-div'>
+                <button class='tri-btn' id='reset-btn' ng-click='timerControl.resetTimer()'>RESET</button>
+            </div>
+        </div>
     </div>
-    <button ng-hide='timerControl.timerRunning' ng-show='timerControl.resetWorkFlow' ng-click='timerControl.startWorkFlow()'>Start</button>
-    <button id='1'ng-click='timerControl.pauseResumeTimer()'><span ng-hide='timerControl.timerPaused' ng-show='!timerControl.timerPaused'>Pause</span><span ng-hide='!timerControl.timerPaused' ng-show='timerControl.timerPaused'>Resume</span></button>
-    <button ng-click='timerControl.resetTimer()'>reset</button>
-    <div></div>
 </div>

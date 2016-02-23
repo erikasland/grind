@@ -3,8 +3,6 @@ grindModule.directive('backImg', function(){
     return function(scope, element, attrs){
         var url = ['./../static/images/pushup.jpg', './../static/images/work.jpg']
         var idx = Math.floor(Math.random() * url.length)
-        console.log(scope)
-        console.log(idx)
         element.css({
             'background': 'url(' + url[idx] +') no-repeat center center fixed',
             'background-size' : 'cover'
