@@ -14,7 +14,6 @@ grindModule.controller('activitiesController', function($location, scheduleFacto
 
     this.submitSchedule = function(userChoice, css_id){
         _this.selections = true;
-        console.log(css_id)
         var schedule = scheduleFactory.schedule
         for(var index = 0; index < schedule.length; index++){
             if(schedule[index].id === userChoice.id){
