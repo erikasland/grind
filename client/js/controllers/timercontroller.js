@@ -48,7 +48,7 @@ grindModule.controller('timerController', function($location, scheduleFactory, $
                 var random_int = Math.round(Math.random(1) * (schedule.length - 2));
 
                 angular.element('#notification').html('<audio autoplay><source src="../../static/sounds/notification.mp3"/></audio>')
-                angular.element('#black-background').css({'position': 'absolute', 'height': '100%', 'width': '100%', 'z-index': '1', 'opacity': '.8', 'background-color': 'black'}); 
+                angular.element('#black-background').css({'position': 'absolute', 'height': '200%', 'width': '100%', 'z-index': '1', 'opacity': '.8', 'background-color': 'black'}); 
                 angular.element('#vid_div').html('<div id="break_div"><h3 id="event_title">' + schedule[random_int].title + '</h3><video width ="100%" controls><source src="' + schedule[random_int].video + '" type="video/mp4"></video><br><br><button class="white_btn" id="end_break_btn" ng-click="timerControl.resetTimer();timerControl.restartWorkFlow('+ time_after_break +')">END BREAK</button></div>')
                 angular.element('#vid_div').css({'height': '100%', 'width': '100%', 'position': 'absolute', 'z-index': '1'});
 

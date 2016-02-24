@@ -6,41 +6,49 @@
     </div>
     <div id='wr-wrapper'>
         <div id='wr-opaq-background'></div>
-        <div id='label-wrapper'>
-            <h3 class='label-text'>work day length:</h3>
-            <h3 class='label-text'>break frequency:</h3>
-            <h3 class='label-text'>break lengths:</h3>
-        </div>
         <div id='input-wrapper'>
-            <select ng-model='ratioControl.workday'>
-                <option value='1'>1 Hour</option>
-                <option value='2'>2 Hours</option>
-                <option value='3'>3 Hours</option>
-                <option value='4'>4 Hours</option>
-                <option value='5'>5 Hours</option>
-                <option value='6'>6 Hours</option>
-                <option value='7'>7 Hours</option>
-                <option value='8'>8 Hours</option>
-                <option value='9'>9 Hours</option>
-                <option value='10'>10 Hours</option>
-                <option value='11'>11 Hours</option>
-                <option value='12'>12 Hours</option>
-            </select>
-<!--           <input type='text' ng-model='ratioControl.breakspan'>
- -->            <select ng-model='ratioControl.breakspan'>
-                <option value='.5'>30 Minutes</option>
-                <option value='1'>1 Hour</option>
-                <option value='1.5'>1 1/2 Hour</option>
-                <option value='2'>2 Hours</option>
-            </select>
-            <select ng-model='ratioControl.breaklength'>
-                <option value='5'>5 Minutes</option>
-                <option value='15'>15 Minutes</option>
-                <option value='30'>30 Minutes</option>
-                <option value='60'>1 Hour</option>
-                <option value='120'>2 Hours</option>
-            </select>
-        </div><br>
-        <button class='white_btn' id='wr-next' ng-click='ratioControl.nextPage()'>NEXT</button>
+            <div>
+                <h3 class='label-text'>work day length:</h3>
+                <select ng-model='ratioControl.workday'>
+                    <option value='1'>1 Hour</option>
+                    <option value='2'>2 Hours</option>
+                    <option value='3'>3 Hours</option>
+                    <option value='4'>4 Hours</option>
+                    <option value='5'>5 Hours</option>
+                    <option value='6'>6 Hours</option>
+                    <option value='7'>7 Hours</option>
+                    <option value='8'>8 Hours</option>
+                    <option value='9'>9 Hours</option>
+                    <option value='10'>10 Hours</option>
+                    <option value='11'>11 Hours</option>
+                    <option value='12'>12 Hours</option>
+                </select>
+            </div>
+            <div>
+                <input type='text' ng-model='ratioControl.breakspan'>
+                <!-- <h3 class='label-text'>break frequency:</h3>
+                <select ng-model='ratioControl.breakspan'>
+                    <option value='.5'>30 Minutes</option>
+                    <option value='1'>1 Hour</option>
+                    <option value='1.5'>1 1/2 Hour</option>
+                    <option value='2'>2 Hours</option>
+                </select> -->
+            </div>
+            <div>
+                <h3 class='label-text'>break lengths:</h3>
+                <select ng-model='ratioControl.breaklength'>
+                    <option value='5'>5 Minutes</option>
+                    <option value='15'>15 Minutes</option>
+                    <option value='30'>30 Minutes</option>
+                    <option value='60'>1 Hour</option>
+                    <option value='120'>2 Hours</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div id='wr-button-wrapper'>
+            <div id='wr-opaq-black-background'></div>
+            <button class='white_btn' id='wr-next' ng-click='ratioControl.nextPage()'>NEXT</button>
+        </div>
     </div>
 </div>
