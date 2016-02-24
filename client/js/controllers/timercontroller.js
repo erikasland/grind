@@ -1,5 +1,5 @@
 grindModule.controller('timerController', function($location, scheduleFactory, $compile, $scope){
-    // if(scheduleFactory.schedule.length === 0){$location.path('/')}
+    if(scheduleFactory.schedule.length === 0){$location.path('/')}
     var _this = this;
     var schedule = scheduleFactory.schedule;
 
