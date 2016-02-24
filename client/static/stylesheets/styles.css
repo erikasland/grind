@@ -15,14 +15,6 @@
 
 @media screen and (min-width: 0px) {
 
-    html { 
-      background: no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
     #landing-wrapper{
         width: 18em;
         margin: 0 auto;
@@ -51,8 +43,7 @@
 
     #button-wrapper{
         width: 18em;
-        position: fixed;
-        bottom: 4em;
+        margin: 13em 0 0 0;
     }
 
     .white_btn{
@@ -332,11 +323,13 @@
 
     #button-wrapper{
         width: 28em;
+        margin: 0 auto;
     }
 
     .white_btn{
         height: 3.5em;
         font-size: 1.4em;
+        margin: 14em 0 0 0;
     }
 
     /*Activities*/
