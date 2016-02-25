@@ -680,20 +680,29 @@
 @media screen and (max-height: 414px){
     #button-wrapper, #wr-button-wrapper{
         position: static;
-        margin-top: 4em;
+        margin: 4em 0 2em 0;
     }
 
     #opaq-black-background, #wr-opaq-black-background{
         background-color: transparent;
     }
+
+    .white_btn{
+        background-color: white;
+        color: black;
+    }
 }
 @media screen and (max-height: 575px) and (min-height: 414px){
-
     #wr-button-wrapper{
         position: static;
     }
 
     #wr-opaq-black-background{
         background-color: transparent;
+    }
+
+    .white_btn{
+        background-color: white;
+        color: black;
     }
 }
