@@ -18,7 +18,6 @@
     url('./BebasNeue/TTF/BebasNeueLight.woff'),
     url('./BebasNeue/TTF/BebasNeueLight.eot')
 }
-
 html,body{
     height: 100%;
 }
@@ -189,6 +188,7 @@ html,body{
     #wr-main-wrap{
         width: 19em;
         margin: 0 auto;
+        height: 26em;
     }
 
     #wr-title{
@@ -201,6 +201,7 @@ html,body{
 
     #wr-wrapper{
         width: 17em;
+        height: 16.8em;
         margin: 3.5em auto;
     }
 
@@ -221,9 +222,19 @@ html,body{
         border-radius: .25em;
     }
 
+
     #input-wrapper{
         margin: 5em 0;
-        padding: .85em 0 0 .6em;
+        padding: 4% 0 0 .6em;
+        width: 93%;
+        height: 40%;
+        
+    }
+
+    .wr-input-div{
+        width: 99%;
+        height: 15%;
+        padding-bottom: 8%;
     }
 
     .label-text{
@@ -231,14 +242,15 @@ html,body{
         margin-bottom: .8em;
         word-spacing: .1em;
         display: inline-block;vertical-align: top;
-        width: 9em;
+        width: 66%;
     }
 
     select{
-        width: 6em;
-        margin: 0 0 1.1em 0;
+        width: 32%;
+        height: 100%;
         background-color: white;
         border: black solid .1em;
+        font-size: .7em;
     }
 
     #wr-button-wrapper{
@@ -265,15 +277,16 @@ html,body{
 
     #timer-wrap{
         width: 18em;
-        height: 20em;
-        margin: 0 auto;
-        padding-top: 45%;
-        z-index: -1;
+        height: 12em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
     }
 
     #timer{
-        width: 17.7em;
-        height: 8em;
+        width: 100%;
+        height: 68%;
         background-color: white;
         opacity: .7;
         border-radius: .25em;
@@ -281,7 +294,7 @@ html,body{
 
     }
     #time{
-        padding-top: .6em;
+        padding-top: 14%;
         text-align: center;
         font-family: 'Bebas Neue';
         font-size: 4em;
@@ -306,21 +319,26 @@ html,body{
 
     #tri-btn-wrap{
         width: 100%;
-        margin: 0 auto;
+        margin: 3% auto 0 auto;
+        height: 17%;
     }
 
     .tri-btn-div{
         display: inline-block;
-        width: 5.5em;
+        width: 30.7%;
+        height: 2em;
     }
 
     .tri-btn{
-        width: 6.5em;
-        height: 2.5em;
+        width: 100%;
+        height: 100%;
         font-family: sans-serif;
         font-weight: bold;
-        margin-top: 2em;
         background-color: white;
+    }
+
+    #start-btn-div{
+        margin-right: 2%;
     }
 
     #start-btn:hover{
@@ -351,6 +369,7 @@ html,body{
         margin-top: 5em;
     }
 }
+
 
 @media screen and (min-width: 481px) {
     #landing-wrapper{
@@ -462,14 +481,16 @@ html,body{
         padding: 1.3em 0 0 1.6em;
     }
 
+    .wr-input-div{
+        height: 22%;
+    }
+
     .label-text{
         font-size: 2em;
     }
 
     select{
-        width: 9em;
-        height: 2em;
-        margin: 0 0 2.35em 0;
+        width: 31%;
     }
 
     #wr-next{   
@@ -494,6 +515,7 @@ html,body{
 
     #timer-wrap{
         width: 28em;
+        height: 20em;
     }
 
     #timer{
@@ -635,7 +657,15 @@ html,body{
     }
 
     #input-wrapper{
-        padding-left: 3.2em;
+        padding-left: 5%;
+        width: 93%;
+        height: 60%;
+    }
+
+    .wr-input-div{
+        width: 99%;
+        height: 18%;
+        padding-bottom: 5.5%;
     }
 
     #wr-next{
@@ -651,8 +681,8 @@ html,body{
     }
 
     #timer-wrap{
-        width: 41em;
-        padding: 20%
+        width: 40em;
+        height: 25em;
     }
 
     #timer{
@@ -692,7 +722,14 @@ html,body{
         position: static;
         margin: 4em 0 2em 0;
     }
+  
 
+    #timer-wrap{
+        position: static;
+        transform: none;
+        margin: 2em auto 0 auto;
+
+    }
     #opaq-black-background, #wr-opaq-black-background{
         background-color: transparent;
     }

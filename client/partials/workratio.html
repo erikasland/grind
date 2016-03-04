@@ -7,7 +7,7 @@
     <div id='wr-wrapper'>
         <div id='wr-opaq-background'></div>
         <div id='input-wrapper'>
-            <div>
+            <div class='wr-input-div'>
                 <h3 class='label-text'>work day length:</h3>
                 <select ng-model='ratioControl.workday'>
                     <option value='1'>1 Hour</option>
@@ -24,8 +24,8 @@
                     <option value='12'>12 Hours</option>
                 </select>
             </div>
-            <div>
-                <!-- <input type='text' ng-model='ratioControl.breakspan'> -->
+            <div class='wr-input-div'>
+                <!-- <input type='text' ng-model='ratioControl.breakspan'> --> <!-- For testing purposes.-->
                 <h3 class='label-text'>break frequency:</h3>
                 <select ng-model='ratioControl.breakspan'>
                     <option value='.5'>30 Minutes</option>
@@ -34,7 +34,7 @@
                     <option value='2'>2 Hours</option>
                 </select>
             </div>
-            <div>
+            <div class='wr-input-div'>
                 <h3 class='label-text'>break lengths:</h3>
                 <select ng-model='ratioControl.breaklength'>
                     <option value='5'>5 Minutes</option>
