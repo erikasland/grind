@@ -89,6 +89,7 @@ grindModule.controller('timerController', function($location, scheduleFactory, $
     }
 
     this.resetTimer = function(){
+        angular.element('#vid_div').css('z-index', '-1');
        _this.resetWorkFlow = true;
        _this.closeVideo = true;
     }
