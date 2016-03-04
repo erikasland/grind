@@ -5,18 +5,18 @@
 
 @font-face{
     font-family: 'Bebas Neue';
-    src: url('./BebasNeue/TTF/BebasNeueBold.ttf');
-    src: url('./BebasNeue/TTF/BebasNeueBold.otf');
-    src: url('./BebasNeue/TTF/BebasNeueBold.woff');
-    src: url('./BebasNeue/TTF/BebasNeueBold.eot');
+    src: url('./BebasNeue/TTF/BebasNeueBold.ttf'),
+    url('./BebasNeue/TTF/BebasNeueBold.otf'),
+    url('./BebasNeue/TTF/BebasNeueBold.woff'),
+    url('./BebasNeue/TTF/BebasNeueBold.eot')
 }
 
 @font-face{
     font-family: 'Bebas Neue Light';
-    src: url('./BebasNeue/TTF/BebasNeueLight.ttf');
-    src: url('./BebasNeue/TTF/BebasNeueLight.otf');
-    src: url('./BebasNeue/TTF/BebasNeueLight.woff');
-    src: url('./BebasNeue/TTF/BebasNeueLight.eot');
+    src: url('./BebasNeue/TTF/BebasNeueLight.ttf'),
+    url('./BebasNeue/TTF/BebasNeueLight.otf'),
+    url('./BebasNeue/TTF/BebasNeueLight.woff'),
+    url('./BebasNeue/TTF/BebasNeueLight.eot')
 }
 
 html,body{
